@@ -140,7 +140,7 @@ CPU的表現：對於一個單一的程式，使用者的CPU時間。
 
 ### 1.6.3 相關表現
 
-定義表現：$\text{Perfomance} = \dfrac{1}{\text{Execution Time}}$
+定義表現： $\text{Perfomance} = \dfrac{1}{\text{Execution Time}}$
 
 若我們說$x$比$y$快$n$倍，則
 
