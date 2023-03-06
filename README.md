@@ -188,7 +188,7 @@ CPU時間：電腦利用固定頻率的時脈來執行指令，並且決定事�
 
 ### 1.6.6 程式執行時間
 
-CPU的執行程式的時間：$\text{Clock Cycle for program} \times \text{Clock Cycle Time} = \dfrac{\text{Clock Cycles for Program}}{\text{Clock Rate}}$
+CPU的執行程式的時間： $\text{Clock Cycle for program} \times \text{Clock Cycle Time} = \dfrac{\text{Clock Cycles for Program}}{\text{Clock Rate}}$
 
 CPI：Clock cycles per Instruction，也就是一個指令所需的時脈週期
 
@@ -206,19 +206,19 @@ $\text{CPU Time} = \text{Instruction Count} \times \text{CPI} \times \text{Clock
 
 ##### Example
 
-A電腦：$\text{Cycle Time = 250ps}, \text{CPI = 2.0}$
+A電腦： $\text{Cycle Time = 250ps}, \text{CPI = 2.0}$
 
-B電腦：$\text{Cycle Time = 500ps, CPI = 1.2}$
+B電腦： $\text{Cycle Time = 500ps, CPI = 1.2}$
 
 一樣的指令集架構，哪一個比較快速，然後大概需要多少時間？
 
-在A電腦，一個指令通常需要執行$250 \times 2.0 = 500\text{ps}$
+在A電腦，一個指令通常需要執行 $250 \times 2.0 = 500\text{ps}$
 
-在B電腦，一個指令通常需要執行$500 \times 1.2 = 600\text{ps}$
+在B電腦，一個指令通常需要執行 $500 \times 1.2 = 600\text{ps}$
 
 故A電腦比B電腦快。
 
-A電腦比B電腦快$\dfrac{600}{500} = 1.2$倍
+A電腦比B電腦快 $\dfrac{600}{500} = 1.2$倍
 
 ### 1.6.8 更多關於CPI的部分
 
@@ -234,13 +234,13 @@ $\text{CPI} = \dfrac{\text{Clock Cycles}}{\text{Instruction Count}} = \displayst
 
 ![image-20210304174219987](https://i.imgur.com/AMxkwxZ.png)
 
-若Sequence 1的$IC = 5$，則$\text{Clock Cycles} = 2\times 1 + 2\times 1 + 3\times 2 = 10$
+若Sequence 1的 $IC = 5$，則 $\text{Clock Cycles} = 2\times 1 + 2\times 1 + 3\times 2 = 10$
 
-所以$\text{Avg. CPI} = \dfrac{10}{5} = 2$
+所以 $\text{Avg. CPI} = \dfrac{10}{5} = 2$
 
-若Sequence 2的$IC = 6$，則$\text{Clock Cycles} = 4\times 1 + 1\times 2 + 1\times 3 = 9$
+若Sequence 2的 $IC = 6$，則 $\text{Clock Cycles} = 4\times 1 + 1\times 2 + 1\times 3 = 9$
 
-所以$\text{Avg. CPI} = \dfrac{9}{6} = 1.5$
+所以 $\text{Avg. CPI} = \dfrac{9}{6} = 1.5$
 
 ### 1.6.9 對於CPU表現的總結
 
