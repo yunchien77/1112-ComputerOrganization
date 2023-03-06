@@ -158,7 +158,7 @@ $n = \dfrac{\text{Perfomance }p_x}{\text{Perfomance }p_y} = \dfrac{\text{Executi
 
 時鐘頻率：一秒鐘的時脈次數，例如$4.0\text{GHz} = 4000\text{MHz} = 4\times 10^9\text{Hz}$
 
-$\text{CPU}$時間：$\text{CPU Clock Cycles} \times \text{Clock Cycles Time} = \dfrac{\text{CPU Clock Cycles}}{\text{Clock Rates}}$
+$\text{CPU}$時間： $\text{CPU Clock Cycles} \times \text{Clock Cycles Time} = \dfrac{\text{CPU Clock Cycles}}{\text{Clock Rates}}$
 
 表現會隨著「減少一個時脈週期的時間」、「增加時鐘頻率」進步
 
