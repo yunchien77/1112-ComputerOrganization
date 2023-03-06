@@ -125,13 +125,13 @@ $\text{Yield} = \dfrac{1}{(1+(\text{Defects per area} \times \text{Die Area}/2))
 
 ### 1.6.2 時間
 
-定義時間：
+Execution time(program總執行時間)：
 
 - 完成一個工作總共需要多少時間，包含硬碟與記憶體存取，輸入輸出的動作，OS...
 - 可能包含其他程式在多執行緒的執行時間
 - 包含很多因素
 
-CPU的時間：
+CPU ：
 
 - 被稱作「CPU的執行時間」或者「CPU的時間」
 - 通常還會細分成「對於OS的CPU時間」與「對於使用者程式的CPU時間」
