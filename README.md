@@ -1,4 +1,4 @@
-## 1. Computer Abstractions and Technology
+## Chapter 1. Computer Abstractions and Technology
 
 ### 1.1 介紹
 
@@ -115,13 +115,13 @@ $\text{Yield} = \dfrac{1}{(1+(\text{Defects per area} \times \text{Die Area}/2))
 
 
 
-## 1.6 效能
+## 1.6 效能 (Performance)
 
 ### 1.6.1 回應時間與流通量
 
-回應時間：要花多少時間能夠完成工作
+回應時間(Response time)：要花多少時間能夠完成工作
 
-流通量：在一個時間單位內，總共能夠完成多少工作
+流通量(Throughput)：在一個時間單位內，總共能夠完成多少工作
 
 ### 1.6.2 時間
 
