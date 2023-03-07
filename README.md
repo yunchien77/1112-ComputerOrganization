@@ -194,7 +194,7 @@ CPI：Clock cycles per Instruction，也就是一個指令所需的時脈週期
 
 對於程式的CPU的時脈週期：程式的指令數 x CPI
 
-### 1.6.7 指令數量與CPI
+### 1.6.7 指令數量(Instruction Count)與CPI(Average Cycles Per Instruction)
 
 $\text{Clock Cycles} = \text{Instruction Count} \times \text{Cycles per Instruction}$
 
