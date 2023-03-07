@@ -150,13 +150,13 @@ $n = \dfrac{\text{Perfomance }p_x}{\text{Perfomance }p_y} = \dfrac{\text{Executi
 
 我們通常都是「預估」一個程式的執行時間
 
-### 1.6.4 CPU的時脈
+### 1.6.4 CPU的時脈 (CPU Clocking)
 
 ![image-20210304164426097](https://i.imgur.com/0Q8M0m5.png)
 
-時脈週期（Clock period/Clock cycle time)：一個時間週期的時間，例如 $250\text{ps} = 2.5 \times 10^{-10}\text{s}$
+時脈週期 (Clock period/Clock cycle time)：一個時間週期的時間，例如 $250\text{ps} = 2.5 \times 10^{-10}\text{s}$
 
-時鐘頻率(Clock frequency/Clock rate)：一秒鐘的時脈次數，例如 $4.0\text{GHz} = 4000\text{MHz} = 4\times 10^9\text{Hz}$
+時鐘頻率 (Clock frequency/Clock rate)：一秒鐘的時脈次數，例如 $4.0\text{GHz} = 4000\text{MHz} = 4\times 10^9\text{Hz}$
 
 $\text{CPU}$時間： $\text{CPU Clock Cycles} \times \text{Clock Cycles Time} = \dfrac{\text{CPU Clock Cycles}}{\text{Clock Rates}}$
 
