@@ -255,7 +255,7 @@ $\text{CPU Times} = \dfrac{\text{Instruction}}{\text{Program}} \times \dfrac{\te
 1. 演算法(影響指令數量與可能影響CPI)
 2. 程式語言(影響IC與CPI)
 3. 編譯器(影響IC與CPI)
-4. 指令集架構(影響IC與CPI以及時脈)
+4. 指令集架構(影響IC與CPI以及時脈(clock rate))
 
 
 
