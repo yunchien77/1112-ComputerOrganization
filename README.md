@@ -194,15 +194,15 @@ CPI：Clock cycles per Instruction，也就是一個指令所需的時脈週期
 
 對於程式的CPU的時脈週期：程式的指令數 x CPI
 
-### 1.6.7 指令數量(Instruction Count)與CPI(Average Cycles Per Instruction)
+### 1.6.7 指令數量 (Instruction Count) 與CPI (Average Cycles Per Instruction)
 
-$\text{Clock Cycles} = \text{Instruction Count} \times \text{Cycles per Instruction}$
+$\text{Clock Cycles} = \text{Instruction Count} \times \text{CPI}$
 
-$\text{CPU Time} = \text{Instruction Count} \times \text{CPI} \times \text{Clock Cycles Time} = \dfrac{\text{Instruction Count} \times \text{CPI}}{\text{Clock Rates}}$
+$\text{CPU Time} = \text{Clock Cycles} \times \text{Clock Cycles Time} = \text{Instruction Count} \times \text{CPI} \times \text{Clock Cycles Time} = \dfrac{\text{Instruction Count} \times \text{CPI}}{\text{Clock Rates}}$
 
-決定程式指令數量的要素：決定於程式、指令集架構與編譯器
+決定程式指令數量(Instruction Count)的要素：決定於程式、指令集架構與編譯器
 
-平均一個指令的時脈週期：決定於CPU，也被不同種類的指令所影響
+平均一個指令的時脈週期(CPI)：決定於CPU，也被不同種類的指令所影響
 
 ##### Example
 
@@ -210,15 +210,19 @@ A電腦： $\text{Cycle Time = 250ps}, \text{CPI = 2.0}$
 
 B電腦： $\text{Cycle Time = 500ps, CPI = 1.2}$
 
-一樣的指令集架構，哪一個比較快速，然後大概需要多少時間？
+一樣的指令集架構(same ISA)，哪一個比較快速，然後大概需要多少時間？
 
-在A電腦，一個指令通常需要執行 $250 \times 2.0 = 500\text{ps}$
+$\text{CPU Time} = \text{Instruction Count} \times \text{CPI} \times \text{Clock Cycles Time}$
 
-在B電腦，一個指令通常需要執行 $500 \times 1.2 = 600\text{ps}$
+$\text{CPU }Time_A = \text{I} \times 250 \times 2.0 = \text{I} \times 500\text{ps}$
+
+$\text{CPU }Time_B = \text{I} \times 500 \times 1.2 = \text{I} \times 600\text{ps}$
 
 故A電腦比B電腦快。
 
-A電腦比B電腦快 $\dfrac{600}{500} = 1.2$倍
+$\dfrac{\text{CPU }Time_A}{\text{CPU }Time_B} = \dfrac{\text{I} \times 600}{\text{I} \times 500} = 1.2$
+
+A電腦比B電腦快1.2倍
 
 ### 1.6.8 更多關於CPI的部分
 
