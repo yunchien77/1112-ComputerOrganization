@@ -1517,7 +1517,7 @@ $\text{Dividend} = \text{Quotient} \times \text{Divisor} + \text{Remainder}$
 
 ### 二進位浮點數
 
-用來儲存不完整的除法的數字，例如$1/3=0.33333...$
+用來儲存不完整的除法的數字，例如 $1/3=0.33333...$
 
 用來儲存科學記號，像這些
 
@@ -1553,19 +1553,19 @@ $\text{Dividend} = \text{Quotient} \times \text{Divisor} + \text{Remainder}$
 
 考慮Single Fraction最小的呈現範圍，也就是讓Exponent = 00000001，Fraction = 00000....00000
 
-則Exponent會是-126，結果會是$\pm 1.0 \times  2^{-126} \approx \pm 1.2 \times 10^{-38}$
+則Exponent會是-126，結果會是 $\pm 1.0 \times  2^{-126} \approx \pm 1.2 \times 10^{-38}$
 
 考慮最大的呈現範圍，也就是讓Exponent = 11111110，Fraction = 11111....11111
 
-則Exponent會是127，結果會大概為$\pm 2.0 \times 2^{126} \approx \pm 1.2 \times 10^{38}$
+則Exponent會是127，結果會大概為 $\pm 2.0 \times 2^{126} \approx \pm 1.2 \times 10^{38}$
 
 考慮Double Fraction最小的呈現範圍，也就是讓Exponenet = 00000000001，Fraction = 00000...00000
 
-則Exponent會是-1022，結果會是$\pm 1.0 \times 2^{-1022} \approx 2.2 \times 10^{-308}$
+則Exponent會是-1022，結果會是b$\pm 1.0 \times 2^{-1022} \approx 2.2 \times 10^{-308}$
 
 考慮Double Fraction最小的呈現範圍，也就是讓Exponenet = 11111111110，Fraction = 11111...11111
 
-則Exponent會是1023，結果會大概為$\pm 2.0 \times 2^{1023} \approx 1.8 \times 10^{308}$
+則Exponent會是1023，結果會大概為 $\pm 2.0 \times 2^{1023} \approx 1.8 \times 10^{308}$
 
 
 
@@ -1573,31 +1573,31 @@ $\text{Dividend} = \text{Quotient} \times \text{Divisor} + \text{Remainder}$
 
 在浮點數中的Fraction，是個有號數。
 
-在Single的Fraction中，精確度約為$2^{-23}$bits，換算大概是$23 \log 2 \approx 6$，因此在十進制中，只能精確呈現小數點後六位的數字
+在Single的Fraction中，精確度約為 $2^{-23}$bits，換算大概是$23 \log 2 \approx 6$，因此在十進制中，只能精確呈現小數點後六位的數字
 
-在Double的Fraction中，精確度約為$2^{-52}$bits，換算大概是$52 \log 2 \approx 16$，因此在十進制中，只能精確呈現小數點後十六位的數字
+在Double的Fraction中，精確度約為 $2^{-52}$bits，換算大概是$52 \log 2 \approx 16$，因此在十進制中，只能精確呈現小數點後十六位的數字
 
 
 
-舉個例子，若我們要呈現-0.75，則$-0.75 = (-1)^1 \times 1.1_{(2)} \times 2^{-1}$
+舉個例子，若我們要呈現-0.75，則 $-0.75 = (-1)^1 \times 1.1_{(2)} \times 2^{-1}$
 
-所以可以知道，$S=1$，Fraction的精確度為$1000...00000_{(2)}$
+所以可以知道， $S=1$，Fraction的精確度為 $1000...00000_{(2)}$
 
 Exponenet = -1 - Bias
 
-如果是Single即為$-1-127=-128(\text{signed}) = 126(\text{unsigned}) = 01111110_{(2)}$
+如果是Single即為 $-1-127=-128(\text{signed}) = 126(\text{unsigned}) = 01111110_{(2)}$
 
-如果是Double即為$-1 - 1023 = -1024(\text{signed}) = 1022(\text{unsigned}) = 01111111110_{(2)}$
+如果是Double即為 $-1 - 1023 = -1024(\text{signed}) = 1022(\text{unsigned}) = 01111111110_{(2)}$
 
-因此Single為$\color{purple}{1}\color{green}{01111110}\color{black}1000…00_{(2)}$，Double為$\color{purple}{1}\color{green}{01111111110}\color{black}{1000…00_{(2)}}$
+因此Single為 $\color{purple}{1}\color{green}{01111110}\color{black}1000…00_{(2)}$ ，Double為  $\color{purple}{1}\color{green}{01111111110}\color{black}{1000…00_{(2)}}$
 
 
 
 再舉個例子，若我們要知道11000000101000…00的結果，則
 
-$S = 1$，$\text{Fraction} = 0100000...00_{(2)}$，$\text{Exponent} = 10000001_{(2)} = 129$
+$S = 1$， $\text{Fraction} = 0100000...00_{(2)}$， $\text{Exponent} = 10000001_{(2)} = 129$
 
-因此$x = (-1)^1 + (1 + 01_{(2)}) \times 2^{(129-127)} = (-1)\times1.25\times 2^2 = -5.0$
+因此 $x = (-1)^1 + (1 + 01_{(2)}) \times 2^{(129-127)} = (-1)\times1.25\times 2^2 = -5.0$
 
 
 
@@ -1611,11 +1611,11 @@ $9.999\times 10^1 + 1.610\times 10^{-1}$
 
 $9.999\times 10^1 + 0.061\times 10^1$
 
-將兩個數字做加法，也就是$9.999\times 10^1 + 0.061\times 10^1 = 10.015 \times 10^1$
+將兩個數字做加法，也就是 $9.999\times 10^1 + 0.061\times 10^1 = 10.015 \times 10^1$
 
-接著把他做調整，使他符合科學記號的定義，得到$1.0015\times 10^2$
+接著把他做調整，使他符合科學記號的定義，得到 $1.0015\times 10^2$
 
-如果有需要的話，可以將他做四捨五入等調整，得到$1.002\times 10^2$
+如果有需要的話，可以將他做四捨五入等調整，得到 $1.002\times 10^2$
 
 
 
@@ -1657,7 +1657,7 @@ Need to validate parallel programs under varying degrees of parallelism.
 
 右移僅只限於unsigned integer，算數運算子的右移會複製sign bit.
 
-例如$-5/4$，我們可以寫成$11111011 >> 2$，這樣會變成$11111110$，如果再多做幾次他會變成$-\infty$
+例如 $-5/4$，我們可以寫成 $11111011 >> 2$，這樣會變成 $11111110$，如果再多做幾次他會變成 $-\infty$
 
 
 
