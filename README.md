@@ -1,3 +1,4 @@
+# 1112 計算機組織
 ## Chapter 1. Computer Abstractions and Technology
 
 ### 1.1 介紹
